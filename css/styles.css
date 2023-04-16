@@ -402,7 +402,19 @@ button {
   | Index - Section №5 - Customers
   |============================
 */
-
+.customers {
+  padding-bottom: 120px;
+}
+.customers-list {
+}
+.list {
+}
+.customers-item {
+}
+.customers-link {
+}
+.customers-icon {
+}
 
 
 
