@@ -1,9 +1,8 @@
 /**
   |============================
-  | Root
+  | Root & other
   |============================
 */
-
 html {
   box-sizing: border-box;
 }
@@ -40,6 +39,8 @@ html {
   --second-btnlink-color: #404bbf;
 }
 
+
+
 /**
   |============================
   | Body
@@ -52,12 +53,7 @@ html {
   color: var(--main-text-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   color: var(--main-title-color);
 }
 
@@ -70,7 +66,23 @@ h6 {
   margin-right: auto;
 }
 
+.main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+  text-transform: capitalize;
+
+  margin-bottom: 72px;
+}
+
+
 /* reset start */
+h1,h2,h3,h4,h5,h6,p,ul,ol {
+  margin: 0;
+}
 
 .list {
   list-style: none;
@@ -87,18 +99,6 @@ h6 {
   color: var(--second-btnlink-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol {
-  margin: 0;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -110,6 +110,9 @@ button {
   color: currentColor;
   cursor: pointer;
 }
+/* reset end */
+
+
 
 /**
   |============================
@@ -137,12 +140,13 @@ button {
   color: var(--third-logo-color);
 }
 
+
+
 /**
   |============================
   | Navigation section
   |============================
 */
-
 .header {
   color: var(--main-title-color);
   border-bottom: 1px solid #e7e9fc
@@ -211,6 +215,8 @@ button {
   color: var(--second-btnlink-color);
 }
 
+
+
 /**
   |============================
   | Index - Section №1 - Description
@@ -235,11 +241,9 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
-
 }
 
 .main-button {
-
   margin: 0 auto;
   display: block;
   border: none;
@@ -275,19 +279,11 @@ button {
   padding: 120px 0;
 }
 
-.skills-main-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--main-title-color);
-  text-transform: capitalize;
-}
 .skills-list {
   display: flex;
   gap: 24px;
 }
+
 .skills-title {
   font-weight: 500;
   font-size: 20px;
@@ -296,6 +292,7 @@ button {
   color: var(--main-title-color);
   margin-bottom: 8px;
 }
+
 .skills-text {
   letter-spacing: 0.02em;
   line-height: 1.5;
@@ -331,18 +328,6 @@ button {
   padding-bottom: 120px;
 }
 
-.wotd-main-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--main-title-color);
-  text-transform: capitalize;
-
-  margin-bottom: 72px;
-}
-
 .wotd-list {
   display: flex;
   margin: auto 0;
@@ -355,7 +340,7 @@ button {
 
 /**
   |============================
-  | Index - Section №3 - Our team
+  | Index - Section №4 - Our team
   |============================
 */
 .team {
@@ -367,18 +352,6 @@ button {
 .team-list {
   display: flex;
   gap: 24px;
-}
-
-.team-main-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--main-title-color);
-  text-transform: capitalize;
-
-  margin-bottom: 72px;
 }
 
 .team-item {
@@ -393,13 +366,13 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-
 .team-title {
   letter-spacing: 0.02em;
   font-size: 20px;
   line-height: 1.2;
   color: var(--main-title-color);
 }
+
 .team-names {
   font-weight: 500;
   font-size: 20px;
@@ -421,6 +394,16 @@ button {
   text-align: center;
   color: var(--main-text-color);
 }
+
+
+
+/**
+  |============================
+  | Index - Section №5 - Customers
+  |============================
+*/
+
+
 
 
 
@@ -450,7 +433,6 @@ button {
   column-gap: 24px;
 }
 
-
 .pf-butt-filter {
   font-family: inherit;
   letter-spacing: 0.04em;
@@ -458,7 +440,6 @@ button {
   font-size: 16px;
   line-height: 1.5;
   border-radius: 4px;
-
 
   background-color: var(--second-bg-color);
   color: var(--first-btnlink-color);
@@ -470,7 +451,6 @@ button {
 
 .pf-butt-filter:hover,
 .pf-butt-filter:focus {
-
   color: var(--main-btn-color);
   background-color: var(--second-btnlink-color);
   border: 1px solid transparent;
@@ -512,7 +492,6 @@ border-top: none;
   | Footer- Section №1
   |============================
 */
-
 .footer {
   font-size: 16px;
   line-height: 1.5;
