@@ -38,9 +38,16 @@ html {
   --first-btnlink-color: #4d5ae5;
   --second-btnlink-color:#404BBF;
 
+  /* Social team*/
+--first-social-color:#4d5ae5;
+--second-social-color:#404BBF;
 
-  /* Icons */
+  /* Icons customers*/
   --customer-icon:#8E8F99;
+
+  /* Icons footer */
+--third-social-color:#31D0AA;
+
 }
 
 /**
@@ -230,6 +237,15 @@ button {
   background-color: var(--main-title-color);
   padding: 188px 0;
   text-align: center;
+
+
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/people-office.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .main-header {
   font-weight: 700;
@@ -278,7 +294,7 @@ button {
 */
 
 .skills-main-slection {
-  padding: 120px 0;
+padding: 120px 0;
 }
 
 .skills-list {
@@ -318,6 +334,20 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+
+.skill-ph {
+display: flex;
+align-items: center;
+justify-content: center;
+
+width: 264px;
+height: 112px;
+
+background-color: var(--second-bg-color);
+border-radius: 4px;
+margin-bottom: 8px;
 }
 
 /**
@@ -362,7 +392,7 @@ button {
 }
 
 .team-descr{
-  padding: 32px 16px;
+  padding: 32px 0px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -395,6 +425,43 @@ button {
 
   text-align: center;
   color: var(--main-text-color);
+  margin-bottom: 8px;
+}
+
+
+/* Team - Social media  */
+.team-socials-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:24px;
+}
+
+.team-socials-item {
+height: 40px;
+width: 40px;
+}
+
+.team-socials-link {
+display: flex;
+align-items: center;
+justify-content: center ;
+
+height: 100%;
+width: 100%;
+
+background-color: var(--second-social-color);
+background:var(--first-social-color);
+border-radius: 50%;
+}
+
+.team-social-icon{
+fill: var(--second-bg-color);
+}
+
+.team-socials-link:hover,
+.team-socials-link:focus {
+background-color:var(--second-btnlink-color);
 }
 
 
@@ -532,7 +599,7 @@ border-top: none;
 
 /**
   |============================
-  | Footer- Section №1
+  | Footer- Section
   |============================
 */
 .footer {
@@ -544,6 +611,23 @@ border-top: none;
   background-color: var(--footer-bg-color);
   color: var(--third-logo-color);
 }
+
+.footer-nosocial-container{
+display: flex;
+align-items: baseline;
+justify-content: left;
+
+gap: 120px;
+padding: 0px;
+}
+
+.container-footer{
+margin: 0px;
+padding: 0px;
+min-width:264px;
+
+}
+
 
 .footer-logo{
   display: inline-block;
@@ -557,3 +641,50 @@ border-top: none;
   font-weight: 400;
   font-size: 16px;
 }
+
+
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin: 0;
+  margin-bottom: 16px;
+
+  color: var( --main-bg-color);
+}
+
+.footer-social-list {
+display: flex;
+align-items: baseline;
+gap:16px;
+
+}
+
+.footer-social-item {
+width: 40px;
+height: 40px;
+}
+
+.footer-social-link {
+display: flex;
+align-items: center;
+justify-content: center ;
+  
+height: 100%;
+width: 100%;
+  
+
+background:var(--first-social-color);
+border-radius: 50%;
+}
+
+.footer-social-icon {
+fill: var(--second-bg-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+background-color:var(--third-social-color);
+}
+  
